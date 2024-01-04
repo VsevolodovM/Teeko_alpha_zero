@@ -3,6 +3,8 @@ print(torch.__version__)
 import torch.nn as nn
 import torch.nn.functional as F
 
+torch.manual_seed(0)
+
 
 class ResNet(nn.Module):
     def __init__(self, game, num_resBlocks, num_hidden):
